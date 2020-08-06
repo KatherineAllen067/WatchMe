@@ -1,0 +1,87 @@
+
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+
+.navBar{
+    width: $full-length;
+    background-color:$primary-white;
+    padding:$padding-standard;
+    @include flex-column;
+    justify-content: $middle;
+
+    @include tablet{
+        flex-direction: $rows;
+        padding:$padding-leveltwo;
+        align-items:$middle;
+
+        @include desktop{
+            width:90%;
+            margin:0 auto;
+        }
+    }
+}
+
+.navBar-logo{
+    width:100px;
+    height:25px;
+    padding:$padding-standard;
+    display:flex;
+    align-self: $middle;
+}
+
+.navBar-search{
+    width:$full-length;
+    display:flex;
+    justify-content:$middle;
+    @include tablet{
+        justify-content: flex-end;
+
+    }
+    
+    &__text{
+        width: 15rem;
+        height:2rem;
+        background-color:$primary-offwhite;
+        border-radius: 3px;
+        border: 5px;
+        border-color: black;
+        padding:$padding-standard;
+        @include tablet{
+           
+        }
+    }
+}
+
+.navBar-upload{
+    display:flex;
+    justify-content: $around;
+    @include tablet{
+        padding:$padding-standard;
+        width:20rem;
+    }
+    
+    &__button{
+        width:13rem;
+        height:3rem;
+        font-size:1rem;
+        color: $primary-white;
+        background-color: $brain-bright;
+        border-color:transparent;
+        border-radius: 3px;
+        padding:0.5rem;
+
+        @include tablet{
+            width:7rem;
+            height: 3.5rem;
+        }
+    }
+    &__avatar{
+        width:48px;
+        height:48px;
+        border-radius: 50%;
+        background-image: url(../../assets/images/Mohan-muruge.jpg);
+        background-size:cover;
+      }
+}
+
