@@ -44,9 +44,15 @@
         height:2rem;
         background-color:$primary-offwhite;
         border-radius: 3px;
-        border: 5px;
-        border-color: black;
+        border-color:$primary-silver;
         padding:$padding-standard;
+        background-image: url(../../assets/icons/Icon-search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 1rem;
+        &::placeholder{
+            position:relative;
+            left:20px;
+        }
         @include tablet{
            
         }
@@ -55,7 +61,7 @@
 
 .navBar-upload{
     display:flex;
-    justify-content: $around;
+    justify-content: $apart;
     @include tablet{
         padding:$padding-standard;
         width:20rem;
@@ -70,6 +76,9 @@
         border-color:transparent;
         border-radius: 3px;
         padding:0.5rem;
+        &:hover{
+            background-color:$brain-light;
+        }
 
         @include tablet{
             width:7rem;

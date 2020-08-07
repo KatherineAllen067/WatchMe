@@ -1,6 +1,93 @@
-// @import './sprint-1/src/partials/partial.scss';
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
 
+.comment{
+    background-color: $primary-white;
+    width:$full-length;
+    display:flex;
+    justify-content: $apart;
+    @include tablet{
+        align-content:$middle;
+    }
+    
+}
+// for the avatar
+.comment-avatar{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+    background-image: url(../../assets/images/Mohan-muruge.jpg);
+    background-size:cover;
+    position:relative;
+    top: 20px;
+    @include tablet{
+        display:flex;
+        align-self: $middle;
+        position:relative;
+        top:10px;
+    }
+}
 
+.comment-join{
+    width:14rem;
+    height: 12rem;
+    @include flex-column;
+    align-items: $middle;
+    justify-content: $apart;
+    @include tablet{
+        flex-direction:$rows;
+        width: 38rem;
+        align-content: $middle;
+    }
+}
+.comment-join__title{
+    color: $primary-silver;
+}
+.comment-join__text{
+    width:13.5rem;
+    height:6rem;
+    background-color:$primary-offwhite;
+    border-radius: 3px;
+    border-color:$primary-silver;
+    @include tablet{
+        width:25rem;
+        height:3rem;
+    }
+    &::placeholder{
+        position:relative;
+        top:-25px;
+        left:5px;
+        @include tablet{
+            font-size:1rem;
+            position:relative;
+            top:2px;
+        }
+    }
+    &:active{
+        border-color:$brain-bright;
+        //blueborder not working currently CHECK THIS AGAIN 
+    }
+}
+
+  .comment-button{
+    width:14rem;
+    height:3rem;
+    font-size:1rem;
+    color: $primary-white;
+    background-color: $brain-bright;
+    border-color:transparent;
+    border-radius: 3px;
+    padding:$padding-standard;
+    @include tablet{
+        padding: $padding-leveltwo;
+        position:relative;
+        top:10px;
+    }
+    &:hover{
+        background-color:$brain-light;
+    }
+  }
 
 
 
