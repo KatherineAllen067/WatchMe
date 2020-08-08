@@ -5,12 +5,33 @@
 .comment{
     background-color: $primary-white;
     width:$full-length;
-    display:flex;
+    @include flex-column;
     justify-content: $apart;
+    align-items: $middle;
     @include tablet{
         align-content:$middle;
     }
-    
+}
+.comment-title{
+    width:300px;
+    padding:$padding-standard;
+    display:flex;
+    justify-content: flex-start;
+    @include tablet{
+        width:720px;
+    }
+}
+
+.comment-input{
+    width:290px;
+    display:flex;
+    justify-content: $apart;
+    border-bottom:1.5px solid $primary-silver;
+    @include tablet{
+        width:720px;
+        height: 7rem;
+        align-items: $middle;
+    }
 }
 // for the avatar
 .comment-avatar{
@@ -19,13 +40,9 @@
     border-radius: 50%;
     background-image: url(../../assets/images/Mohan-muruge.jpg);
     background-size:cover;
-    position:relative;
-    top: 20px;
     @include tablet{
         display:flex;
         align-self: $middle;
-        position:relative;
-        top:10px;
     }
 }
 
@@ -89,5 +106,10 @@
     }
   }
 
+.comment-posts{
+    background-color: $primary-white;
+    display:flex;
+    justify-content: $middle;
 
+}
 

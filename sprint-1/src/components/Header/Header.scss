@@ -7,6 +7,7 @@
     width: $full-length;
     background-color:$primary-white;
     padding:$padding-standard;
+    align-items: $middle;
     @include flex-column;
     justify-content: $middle;
 
@@ -23,24 +24,28 @@
 }
 
 .navBar-logo{
-    width:100px;
+    width:320px;
     height:25px;
-    padding:$padding-standard;
+    padding-top:$padding-standard;
     display:flex;
-    align-self: $middle;
+    justify-content: $middle;
+    @include tablet{
+        padding:$none;
+    }
 }
 
 .navBar-search{
     width:$full-length;
     display:flex;
     justify-content:$middle;
+    padding:$padding-standard;
     @include tablet{
         justify-content: flex-end;
 
     }
     
     &__text{
-        width: 15rem;
+        width: 16rem;
         height:2rem;
         background-color:$primary-offwhite;
         border-radius: 3px;
@@ -60,6 +65,7 @@
 }
 
 .navBar-upload{
+    width:320px;
     display:flex;
     justify-content: $apart;
     @include tablet{

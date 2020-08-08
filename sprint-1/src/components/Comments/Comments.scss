@@ -1,0 +1,50 @@
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+@import '../../partials/_fonts';
+
+.comment-holder{
+    @include flex-column;
+    @include tablet{
+        width:720px;
+    }
+}
+
+.comment-holder__row{
+    width:100%;
+    display:flex;
+    border-bottom:1.5px solid $primary-silver;
+    @include tablet{
+        height:6rem;
+        align-items: $middle;
+        justify-content: $middle;
+    }
+}
+
+.comment-info{
+    width:250px;
+    display:flex;
+    flex-wrap:wrap;
+    @include tablet{
+        width:550px;
+    }
+}
+
+span.comment-info__name{
+    font-family:$bold;
+    font-size:$small-font;
+    padding:$padding-standard;
+}
+
+.comment-info__date{
+    color:$primary-silver;
+    font-family:$light;
+    font-size:$small-font;
+    padding:$padding-standard;
+}
+
+.comment-info__post{
+    font-family:$light;
+    font-size:$small-font;
+    padding:$padding-standard;
+}

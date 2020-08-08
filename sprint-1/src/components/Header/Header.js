@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import brainFlixLogo from '../../assets/images/Logo-brainflix.png';
+import Avatar from '../Avatar/Avatar.js';
 
 class Header extends React.Component{
     render(){
@@ -31,12 +32,12 @@ const SearchBar = () =>{
     )
 }
 
+// not sure how to place the avater inside this section yet as a component
 const Upload =()=>{
     return(
     <div class="navBar-upload">
         <button className="navBar-upload__button"> + UPLOAD</button>
-        <div className="navBar-upload__avatar">
-        </div>
+        <Avatar />
     </div>
     )
 }
