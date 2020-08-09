@@ -1,7 +1,6 @@
 import React from 'react';
 import './CommentBox.scss';
 import Avatar from '../Avatar/Avatar.js';
-import Comments from '../Comments/Comments.js';
 
 class CommentBox extends React.Component{
     render(){
@@ -13,7 +12,6 @@ class CommentBox extends React.Component{
                     <CommentInput />
                 </div>
                 <div className="comment-posts">
-                    <Comments /> 
                 </div>
             </div>
         )}

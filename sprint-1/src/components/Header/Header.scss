@@ -6,7 +6,7 @@
 .navBar{
     width: $full-length;
     background-color:$primary-white;
-    padding:$padding-standard;
+    padding:$padding-standard 0;
     align-items: $middle;
     @include flex-column;
     justify-content: $middle;
@@ -38,7 +38,7 @@
     width:$full-length;
     display:flex;
     justify-content:$middle;
-    padding:$padding-standard;
+    padding:$padding-standard 0;
     @include tablet{
         justify-content: flex-end;
 

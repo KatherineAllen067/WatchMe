@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 import brainFlixLogo from '../../assets/images/Logo-brainflix.png';
 import Avatar from '../Avatar/Avatar.js';
+import UploadImage from '../../assets/icons/Icon-upload.svg';
 
 class Header extends React.Component{
     render(){
@@ -36,7 +37,7 @@ const SearchBar = () =>{
 const Upload =()=>{
     return(
     <div class="navBar-upload">
-        <button className="navBar-upload__button"> + UPLOAD</button>
+        <button className="navBar-upload__button"> <img src={UploadImage} alt="plus sign"/> UPLOAD</button>
         <Avatar />
     </div>
     )

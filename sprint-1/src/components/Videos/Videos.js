@@ -10,7 +10,6 @@ function Videos(props){
             <>
             <PrimaryVideo />
             <main>
-                <CommentBox />
                 <SecondaryVideos />
             </main>
             </>

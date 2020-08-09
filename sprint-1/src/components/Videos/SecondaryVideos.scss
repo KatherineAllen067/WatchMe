@@ -26,7 +26,7 @@
     color:$primary-silver;
     font-family:$medium;
     font-size:$small-font;
-    padding:$padding-standard;
+    padding:2rem 1rem;
     margin: $none;
 
     @include tablet{
@@ -35,7 +35,7 @@
 }
 
 .thumbnail-box__cell{
-    width:320px;
+    width:318px;
     display:flex;
     align-items:$middle;
     padding:$padding-standard;
@@ -45,11 +45,13 @@
     }
 
     &--info-title{
+        font-size:$thumbnail-font;
         font-family: $bold;
         margin:$none;
         padding-bottom:$padding-small;
     }
     &--info-description{
+        font-size:$thumbnail-font;
         font-family:$light;
 
     }
