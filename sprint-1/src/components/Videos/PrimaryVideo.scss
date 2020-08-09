@@ -2,3 +2,37 @@
 @import '../../partials/mixin.scss';
 @import '../../partials/mediabreaks.scss';
 @import '../../partials/fonts.scss';
+
+
+.hero{
+    @include flex-column;
+}
+
+.hero-caption__title{
+    font-family:$bold;
+}
+
+.hero-description{
+    width:310px;
+    padding:0.75rem;
+}
+
+.hero-description--print{
+    font-size:$small-font;
+}
+
+.hero-caption__header{
+    display:flex;
+    align-items: flex-end;
+    &--time{
+        color:$primary-silver;
+        font-family:$light;
+        font-size:$medium-font;
+        margin:$none;
+    }
+    &--author{
+        margin:$none;
+        padding-right:$padding-standard;
+    }
+
+}

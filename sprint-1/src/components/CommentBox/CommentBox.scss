@@ -10,8 +10,18 @@
     align-items: $middle;
     @include tablet{
         align-content:$middle;
+
+        @include desktop{
+            height:550px;
+            align-self:flex-end;
+        }
     }
 }
+
+// desktop
+// align-content: center;
+// height: 550px;
+// align-self: flex-end;
 .comment-title{
     width:300px;
     padding:$padding-standard;

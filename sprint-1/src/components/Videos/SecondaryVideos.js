@@ -41,7 +41,7 @@ function SecondaryVideos(props){
             id: uuid(), 
             title: 'Take A Romantic Break In A Boutique Hotel', 
             channel: 'Ethan Owen', 
-            image: <img src={Video6} alt="resort on the ocean" /> 
+            image: <img className="side-video" src={Video6} alt="resort on the ocean" /> 
         },
         {
             id: uuid(), 
@@ -94,8 +94,11 @@ function SideVideo(props){
         return(
             <div className="thumbnail-box__cell">
                 <div>{props.image}</div>
-                <h4 className="thumbnail-box__cell--title">{props.title}</h4>
-                <span className="thumbnail-box__cell--description">{props.channel}</span>
+                <div className="thumbnail-box__cell--info">
+                    <h4 className="thumbnail-box__cell--info-title">{props.title}</h4>
+                    <span className="thumbnail-box__cell--info-description">{props.channel}</span>
+                </div>
+                
             </div>
         )
 }   

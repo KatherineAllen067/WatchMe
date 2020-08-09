@@ -1,4 +1,10 @@
-// @import './sprint-1/src/partials/partial.scss';
-// @import '../../partials/mixin.scss';
-// @import '../../partials/mediabreaks.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+@import '../../partials/partial.scss';
+@import '../../partials/_fonts';
 
+main{
+    @include desktop{
+        display:flex;
+    }
+}
