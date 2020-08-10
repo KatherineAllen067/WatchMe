@@ -15,6 +15,7 @@
         flex-direction: $rows;
         padding:$padding-leveltwo;
         align-items:$middle;
+        padding:$none;
 
         @include desktop{
             width:90%;

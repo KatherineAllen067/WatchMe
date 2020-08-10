@@ -5,13 +5,21 @@
 
 .hero{
     @include flex-column;
+    align-items: $middle;
 
     &-caption{
+        width:275px;
         padding:0.5rem 1rem;
+        border-bottom:1px solid $primary-silver;
+        @include tablet{
+            width:710px;
+        }
+        @include desktop{
+            width:690px;
+        }
     }
     &-caption__info{
         display:flex;
-        border-bottom:1px solid $primary-silver;
         padding:1.2rem 0;
 
         &-cell{
@@ -27,17 +35,61 @@
     }
 }
 
+.hero-caption__container{
+    @include tablet{
+        display:flex;
+        justify-content: $between;
+    }
 
+}
+
+video{
+    width:100%;
+    @include tablet{
+        height:400px;
+    }
+    @include desktop{
+        width:100%;
+        height:540px;
+    }
+}
+
+.poster{
+    width:318px;
+    height:183px;
+    @include tablet{
+        width:700px;
+        height:400px;
+    }
+    @include desktop{
+        width:944px;
+        height:540px;
+    }
+}
+
+.hero-box{
+    @include desktop{
+        align-self:flex-start;
+    }
+}
 
 .hero-caption__title{
     font-family:$bold;
     font-size:1.5rem;
+    @include tablet{
+        font-size:2.1rem;
+    }
 }
 
 .hero-description{
     width:290px;
     height:195px;
     padding:$small-font;
+    @include tablet{
+        width:520px;
+        height:130px;
+        align-self: flex-start;
+    }
 }
 
 .hero-description--print{
@@ -53,18 +105,23 @@
         font-family:$light;
         font-size:$medium-font;
         margin:$none;
+        @include tablet{
+            font-size:$thumbnail-font;
+        }
     }
     &--author{
         font-family:$medium;
         font-size:$medium-font;
         margin:$none;
         padding-right:$padding-standard;
+        @include tablet{
+            font-size:$thumbnail-font;
+        }
     }
 
 }
 
 //user comment styling 
-
 .comment-holder{
     @include flex-column;
     align-items:$middle;
@@ -78,6 +135,7 @@
     display:flex;
     border-bottom:1.5px solid $primary-silver;
     @include tablet{
+        width:710px;
         height:6rem;
         align-items: $middle;
         justify-content: $middle;
@@ -96,7 +154,7 @@
 .comment-info__user{
     width:220px;
     display:flex;
-    justify-content: space-between;
+    justify-content: $between;
 
     &--name{
         font-family:$bold;
@@ -116,4 +174,7 @@
     font-family:$light;
     font-size:$small-font;
     padding:$padding-standard;
+    @include tablet{
+        width:624px;
+    }
 }

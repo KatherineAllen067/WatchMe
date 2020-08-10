@@ -8,9 +8,9 @@ import {ReactComponent as Likes} from '../../assets/icons/Icon-likes.svg';
 import {ReactComponent as Views} from '../../assets/icons/Icon-views.svg';
 import CommentBox from '../CommentBox/CommentBox.js';
 // import Pause from '../../assets/icons/Icon-pause.svg';
-// import Play from '../../assets/icons/Icon-play.svg';
-// import FullScreen from '../../assets/icons/Icon-fullscreen.svg';
-// import Volume from '../../assets/icons/Icon-volume.svg';
+import Play from '../../assets/icons/Icon-play.svg';
+import FullScreen from '../../assets/icons/Icon-fullscreen.svg';
+import Volume from '../../assets/icons/Icon-volume.svg';
 // import Scrubber from '../../assets/icons/Icon-scrubber-control.svg';
 
 class PrimaryVideo extends React.Component{
@@ -25,7 +25,7 @@ class PrimaryVideo extends React.Component{
                 image: "two bmx bikers",
                 views: "1,001,023",
                 likes:  "110,985",
-                duration: 'type of <string>',
+                duration: '0:00/0:42',
                 timestamp: '12/18/2018',      
                 comments: [    {
                         id: uuid(),
@@ -83,30 +83,41 @@ class PrimaryVideo extends React.Component{
 function HeroVideo(props){
         return(
             <div className="hero">
-                <video
-                poster={VPoster} alt={props.image} width="318px" height="183px" controls="controls">
+                <video className="primary-video"
+                poster={VPoster} alt={props.image} controls="controls">
                     <source src={Video1} type="mp4"/>
                 </video>
-                <div className="hero-caption">
-                    <h1 className="hero-caption__title">{props.title}</h1>
-                    <div className="hero-caption__header">
-                        <h3 className="hero-caption__header--author">By {props.author}</h3>
-                        <h3 className="hero-caption__header--time">{props.time}</h3>
+                <div className="primary-video__controls">
+                    <a><img src={Play}/></a>
+                    <div>
+                        <a><img src={FullScreen}/></a>
+                        <a><img src={Volume}/></a>
                     </div>
-                    <div className="hero-caption__info">
-                        <div className="hero-caption__info-cell">
-                            <Views />
-                            <span className="hero-caption__info-cell--views">{props.views}</span>
-                        </div>
-                        <div className="hero-caption__info-cell">
-                            <Likes />
-                            <span className="hero-caption__info-cell--likes">{props.likes}</span>
-                        </div> 
-                    </div>                   
                 </div>
-                <div className="hero-description">
-            <span className="hero-description--print">{props.description}</span>
-                </div> 
+                <div className="hero-box">
+                    <div className="hero-caption">
+                        <h1 className="hero-caption__title">{props.title}</h1>
+                        <div className="hero-caption__container">
+                            <div className="hero-caption__header">
+                                <h3 className="hero-caption__header--author">By {props.author}</h3>
+                                <h3 className="hero-caption__header--time">{props.time}</h3>
+                            </div>
+                            <div className="hero-caption__info">
+                                <div className="hero-caption__info-cell">
+                                    <Views />
+                                    <span className="hero-caption__info-cell--views">{props.views}</span>
+                                </div>
+                                <div className="hero-caption__info-cell">
+                                    <Likes />
+                                    <span className="hero-caption__info-cell--likes">{props.likes}</span>
+                                </div> 
+                            </div>   
+                        </div>               
+                    </div>
+                    <div className="hero-description">
+                        <span className="hero-description--print">{props.description}</span>
+                    </div> 
+                </div>
             </div>
         )
 } 

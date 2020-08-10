@@ -9,9 +9,7 @@ function Videos(props){
         return(
             <>
             <PrimaryVideo />
-            <main>
-                <SecondaryVideos />
-            </main>
+            <SecondaryVideos />
             </>
         )
 } 
