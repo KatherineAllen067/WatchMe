@@ -1,7 +1,7 @@
-@import '../../partials/partial.scss';
-@import '../../partials/mixin.scss';
-@import '../../partials/mediabreaks.scss';
-@import '../../partials/_fonts.scss';
+@import '../../../partials/partial.scss';
+@import '../../../partials/mixin.scss';
+@import '../../../partials/mediabreaks.scss';
+@import '../../../partials/_fonts.scss';
 
 .side-video{
     width: 120px;
@@ -11,7 +11,7 @@
 
 .thumbnail{
     @include desktop{
-        border-left: 1px solid $primary-silver;
+        border-left: 1px solid $primary-grey;
     }
 }
 .thumbnail-box__column{
@@ -22,12 +22,18 @@
     }
 }
 
+// attempted to use the line-clamp property here not sure why it's not working
+
 .thumbnail-title{
     color:$primary-silver;
     font-family:$medium;
     font-size:$small-font;
     padding:2rem 1rem;
     margin: $none;
+    display: box;
+    line-clamp: 2;
+    box-orient: vertical;  
+    overflow: hidden;
 
     @include tablet{
         padding: 2rem 2rem 1rem 2rem;
@@ -35,7 +41,7 @@
 }
 
 .thumbnail-box__cell{
-    width:318px;
+    width:300px;
     display:flex;
     align-items:$middle;
     padding:$padding-standard;

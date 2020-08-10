@@ -1,33 +1,34 @@
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import './SecondaryVideos.scss';
-import Video2 from '../../assets/images/video-list-0.jpg';
-import Video3 from '../../assets/images/video-list-1.jpg';
-import Video4 from '../../assets/images/video-list-3.jpg';
-import Video5 from '../../assets/images/video-list-4.jpg';
-import Video6 from '../../assets/images/video-list-5.jpg';
-import Video7 from '../../assets/images/video-list-6.jpg';
-import Video8 from '../../assets/images/video-list-7.jpg';
-import Video9 from '../../assets/images/video-list-8.jpg';
+import Video2 from '../../../assets/images/video-list-0.jpg';
+import Video3 from '../../../assets/images/video-list-1.jpg';
+import Video4 from '../../../assets/images/video-list-3.jpg';
+import Video5 from '../../../assets/images/video-list-4.jpg';
+import Video6 from '../../../assets/images/video-list-5.jpg';
+import Video7 from '../../../assets/images/video-list-6.jpg';
+import Video8 from '../../../assets/images/video-list-7.jpg';
+import Video9 from '../../../assets/images/video-list-8.jpg';
 
 
-function SecondaryVideos(props){
+function SecondaryVideos(){
+    //data structure for the secondary videos that are in a collapsed state while primary video is playing
     const thumbnailVideo = [
         {
             id: uuid(), 
-            title: 'Become A Travel Pro In One Easy Lesson...', 
+            title: 'Become A Travel Pro In One Easy Lesson', 
             channel: 'Scotty Cranmer', 
             image: <img className="side-video" src={Video2} alt="Man with bike" /> 
         },
         {
             id: uuid(), 
-            title: 'Les Houches The Hidden Gem Of The...', 
+            title: 'Les Houches The Hidden Gem Of The Chamonix', 
             channel: 'Scotty Cranmer', 
             image: <img className="side-video" src={Video3} alt="beach front" /> 
         },
         {
             id: uuid(), 
-            title: 'Travel Health Useful Medical Information...', 
+            title: 'Travel Health Useful Medical Information For', 
             channel: 'Scotty Cranmer', 
             image: <img className="side-video" src={Video4} alt="blue smoothie bowl" />
         },
@@ -64,6 +65,7 @@ function SecondaryVideos(props){
     ];
  
         return(
+            //passing the data to the component
             <>
             <div className="thumbnail">
                 <SideTitle />
@@ -92,6 +94,7 @@ const SideTitle =()=>{
 
 function SideVideo(props){
         return(
+            //how the data will be displayed on the page
             <div className="thumbnail-box__cell">
                 <div>{props.image}</div>
                 <div className="thumbnail-box__cell--info">

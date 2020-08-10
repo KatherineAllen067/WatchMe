@@ -33,7 +33,6 @@ const SearchBar = () =>{
     )
 }
 
-// not sure how to place the avater inside this section yet as a component
 const Upload =()=>{
     return(
     <div class="navBar-upload">
@@ -44,5 +43,3 @@ const Upload =()=>{
 }
 
 export default Header;
-// anywhere you'll be passing data down in a state from an outside source you will want a react Component
-// props are like arguments that get passed to a **function**

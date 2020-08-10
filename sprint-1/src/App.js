@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
-import Videos from './components/Videos/Videos';
-
+import Main from './pages/Main.js';
 
 function App() {
   return (
     <>
-    <Header />
-    <Videos />
+    <Main />    
     </>
   )
 }

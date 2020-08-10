@@ -38,23 +38,11 @@
     width:290px;
     display:flex;
     justify-content: $apart;
-    border-bottom:1.5px solid $primary-silver;
+    border-bottom:1.5px solid $primary-grey;
     @include tablet{
         width:720px;
         height: 7rem;
         align-items: $middle;
-    }
-}
-// for the avatar
-.comment-avatar{
-    width:48px;
-    height:48px;
-    border-radius: 50%;
-    background-image: url(../../assets/images/Mohan-muruge.jpg);
-    background-size:cover;
-    @include tablet{
-        display:flex;
-        align-self: $middle;
     }
 }
 
@@ -78,7 +66,8 @@
     height:6rem;
     background-color:$primary-offwhite;
     border-radius: 3px;
-    border-color:$primary-silver;
+    outline:none;
+    border:2px solid $primary-grey;
     @include tablet{
         width:25rem;
         height:3rem;
@@ -93,8 +82,9 @@
             top:2px;
         }
     }
-    &:active{
-        border-color:$brain-bright;
+    &:focus{
+        outline:none;
+        border:2px solid $brain-bright;
         //blueborder not working currently CHECK THIS AGAIN 
     }
 }
