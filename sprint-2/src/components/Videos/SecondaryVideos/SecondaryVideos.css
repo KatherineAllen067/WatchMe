@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "avenir-medium";
+  src: url("../assets/fonts/avenir-regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/avenir-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avenir-light";
+  src: url("../assets/fonts/avenir-light.otf") format("opentype");
+  font-weight: normal;
+}
+
+.side-video {
+  width: 120px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .thumbnail {
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.thumbnail-box__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-box__column {
+    padding: 1rem;
+  }
+}
+
+.thumbnail-title {
+  color: #afafaf;
+  font-family: "avenir-medium";
+  font-size: 0.75rem;
+  padding: 2rem 1rem;
+  margin: 0;
+  display: box;
+  line-clamp: 2;
+  box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-title {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+.thumbnail-box__cell {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.thumbnail-box__cell--info {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.thumbnail-box__cell--info-title {
+  font-size: 0.9rem;
+  font-family: "avenir-bold";
+  margin: 0;
+  padding-bottom: 0.25rem;
+}
+
+.thumbnail-box__cell--info-description {
+  font-size: 0.9rem;
+  font-family: "avenir-light";
+}
+/*# sourceMappingURL=SecondaryVideos.css.map */

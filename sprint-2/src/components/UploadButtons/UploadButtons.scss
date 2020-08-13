@@ -1,0 +1,39 @@
+@import '../../partials/_fonts';
+@import '../../partials/mediabreaks.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/partial.scss';
+
+.upload-buttons{
+    @include flex-column;
+    padding:1rem;
+    @include tablet{
+        align-items: flex-end;
+    }
+}
+
+.upload-buttons__publish{
+    width:288px;
+    font-family:$medium;
+    color:$primary-white;
+    font-size:1rem;
+    background-color: $brain-bright;
+    border-radius:3px;
+    border:none;
+    padding:1rem;
+    @include tablet{
+        width:160px;
+    }
+}
+
+.upload-buttons__cancel{
+    width:288px;
+    font-family:$medium;
+    color:$brain-bright;
+    font-size:1rem;
+    background-color: $primary-white;
+    border: none;
+    padding:1rem;
+    @include tablet{
+        width:160px;
+    }
+}

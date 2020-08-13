@@ -1,0 +1,42 @@
+@import '../partials/partial.scss';
+@import '../partials/mixin.scss';
+@import '../partials/mediabreaks.scss';
+@import '../partials/fonts';
+
+.header-uploads{
+    padding-bottom:$padding-standard;
+    @include light-border;
+    background-color: $primary-white;
+}
+
+.upload{    
+    @include flex-column;
+    @include tablet{
+        width:$full-length;
+        padding-top: $padding-leveltwo;
+        align-items: $middle;
+    }
+    &-title{
+        font-family:$bold;
+        font-size:2rem;
+        padding: 0 $padding-leveltwo; 
+        @include tablet{
+            width:700px;
+            @include light-border;
+        }
+        @include desktop{
+            width:1000px;
+        }
+    }
+}
+
+.preview-upoads{
+    @include desktop{
+        display:flex;
+    }
+    @include desktop{
+        width:1040px;
+        margin:0 auto;
+        @include light-border;
+    }
+}

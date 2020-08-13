@@ -1,0 +1,117 @@
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+
+.comment{
+    background-color: $primary-white;
+    width:$full-length;
+    @include flex-column;
+    justify-content: $apart;
+    align-items: $middle;
+    @include tablet{
+        align-content:$middle;
+        @include desktop{
+            height:550px;
+            align-self:flex-end;
+        }
+    }
+    @include desktop{
+        width:712px;
+        height:200px;
+    }
+}
+
+.comment-title{
+    width:300px;
+    padding:$padding-standard;
+    display:flex;
+    justify-content: flex-start;
+    @include tablet{
+        width:720px;
+    }
+    @include desktop{
+        width:630px;
+    }
+}
+
+.comment-input{
+    width:290px;
+    display:flex;
+    justify-content: $apart;
+    border-bottom:1.5px solid $primary-grey;
+    @include tablet{
+        width:720px;
+        height: 7rem;
+        align-items: $middle;
+    }
+}
+
+.comment-join{
+    width:14rem;
+    height: 12rem;
+    @include flex-column;
+    align-items: $middle;
+    justify-content: $apart;
+    @include tablet{
+        flex-direction:$rows;
+        width: 38rem;
+        align-content: $middle;
+    }
+}
+.comment-join__title{
+    color: $primary-silver;
+}
+.comment-join__text{
+    width:13.5rem;
+    height:6rem;
+    background-color:$primary-offwhite;
+    border-radius: 3px;
+    outline:none;
+    border:2px solid $primary-grey;
+    @include tablet{
+        width:25rem;
+        height:3rem;
+    }
+    &::placeholder{
+        position:relative;
+        top:-25px;
+        left:5px;
+        @include tablet{
+            font-size:1rem;
+            position:relative;
+            top:2px;
+        }
+    }
+    &:focus{
+        outline:none;
+        border:2px solid $brain-bright;
+        //blueborder not working currently CHECK THIS AGAIN 
+    }
+}
+
+  .comment-button{
+    width:14rem;
+    height:3rem;
+    font-size:1rem;
+    color: $primary-white;
+    background-color: $brain-bright;
+    border-color:transparent;
+    border-radius: 3px;
+    padding:$padding-standard;
+    @include tablet{
+        padding: $padding-leveltwo;
+        position:relative;
+        top:10px;
+    }
+    &:hover{
+        background-color:$brain-light;
+    }
+  }
+
+.comment-posts{
+    background-color: $primary-white;
+    display:flex;
+    justify-content: $middle;
+
+}
+

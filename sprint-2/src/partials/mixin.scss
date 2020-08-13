@@ -1,0 +1,17 @@
+@import './partial.scss';
+
+
+@mixin flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+@mixin light-border{
+    border-bottom:1px solid $primary-grey;
+}
+
+@mixin small-titles{
+    font-size: $small-font;
+    font-family:$medium;
+    color:$primary-silver;
+}

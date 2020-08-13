@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AMAA,UAAU;EACR,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAC,yCAAyC,CAAC,kBAAkB;EAChE,WAAW,EAAE,MAAM;;;AAIrB,UAAU;EACR,WAAW,EAAC,aAAa;EACzB,GAAG,EAAE,sCAAsC,CAAC,kBAAkB;;;AAGhE,UAAU;EAEN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,uCAAuC,CAAC,kBAAkB;EAC/D,WAAW,EAAE,MAAM;;;AFDnB,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EJVxC,AAAA,YAAY,CAAA;IAEJ,OAAO,EAAC,IAAI;IACZ,eAAe,ECmBd,MAAM;GDjBd",
+    "sources": [
+        "Main.scss",
+        "../partials/partial.scss",
+        "../partials/mixin.scss",
+        "../partials/partial.scss",
+        "../partials/mediabreaks.scss",
+        "../partials/partial.scss",
+        "../partials/_fonts.scss"
+    ],
+    "names": [],
+    "file": "Main.css"
+}

@@ -1,0 +1,64 @@
+@import '../../../partials/partial.scss';
+@import '../../../partials/mixin.scss';
+@import '../../../partials/mediabreaks.scss';
+@import '../../../partials/_fonts.scss';
+
+.side-video{
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.thumbnail{
+    @include desktop{
+        @include light-border;
+    }
+}
+.thumbnail-box__column{
+    @include flex-column;
+
+    @include tablet{
+        padding:$padding-leveltwo;
+    }
+}
+
+// attempted to use the line-clamp property here not sure why it's not working
+
+.thumbnail-title{
+    color:$primary-silver;
+    font-family:$medium;
+    font-size:$small-font;
+    padding:2rem 1rem;
+    margin: $none;
+    display: box;
+    line-clamp: 2;
+    box-orient: vertical;  
+    overflow: hidden;
+
+    @include tablet{
+        padding: 2rem 2rem 1rem 2rem;
+    }
+}
+
+.thumbnail-box__cell{
+    width:300px;
+    display:flex;
+    align-items:$middle;
+    padding:$padding-standard;
+
+    &--info{
+        padding: 0 $padding-standard 0 $padding-standard;
+    }
+
+    &--info-title{
+        font-size:$thumbnail-font;
+        font-family: $bold;
+        margin:$none;
+        padding-bottom:$padding-small;
+    }
+    &--info-description{
+        font-size:$thumbnail-font;
+        font-family:$light;
+
+    }
+}
