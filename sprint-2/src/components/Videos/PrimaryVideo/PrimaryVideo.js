@@ -5,7 +5,6 @@ import VPoster from '../../../assets/images/video-list-0.jpg';
 import Play from '../../../assets/icons/Icon-play.svg';
 import FullScreen from '../../../assets/icons/Icon-fullscreen.svg';
 import Volume from '../../../assets/icons/Icon-volume.svg';
-import mainVideo from './PrimaryVideoDataStructure.js';
 import axios from 'axios';
 
 class PrimaryVideo extends React.Component{
@@ -13,15 +12,15 @@ class PrimaryVideo extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            mainVideo
+            mainVideo:[]
         }
     }
 
     componentDidMount(){
-        axios.get('https://project-2-api.herokuapp.com/videos/:1af0jruup5gu?api_key=408e5c34-9475-4512-a5bd-27932580cec9')
+        axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=24bb5348-1a24-4271-bdb9-a54c38908b34')
         .then(res=>{ 
-            console.log(res)
-            this.setState({mainVideo:res})
+            console.log(res.data)
+            this.setState({mainVideo:res.data})
         }
         )      
     }
@@ -30,14 +29,7 @@ class PrimaryVideo extends React.Component{
         return(
             <>
             <HeroVideo
-               key={this.state.mainVideo.id} 
-               image={this.state.mainVideo.image}
-               title={this.state.mainVideo.title}
-               author={this.state.mainVideo.channel}
-               time={this.state.mainVideo.timestamp}
-               views={this.state.mainVideo.views}
-               likes={this.state.mainVideo.likes}
-               description={this.state.mainVideo.description}
+               id={this.state.mainVideo.id} 
                duration={this.state.mainVideo.duration}
                />                  
                </>

@@ -83,4 +83,3 @@ const mainVideo ={
     //     }
     // ];
 
-export default mainVideo;
