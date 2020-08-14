@@ -3,7 +3,6 @@ import React from 'react';
 import './SecondaryVideos.scss';
 import axios from 'axios';
 
-
 class SecondaryVideos extends React.Component{
     constructor(props){
         super(props)
@@ -13,10 +12,10 @@ class SecondaryVideos extends React.Component{
       }
         
     componentDidMount(){
-        axios.get('https://project-2-api.herokuapp.com?api_key=408e5c34-9475-4512-a5bd-27932580cec9/videos')
+        axios.get('https://project-2-api.herokuapp.com/videos?api_key=408e5c34-9475-4512-a5bd-27932580cec9')
         .then(res=>{ 
-            console.log(res)
-            this.setState({thumbnail:res})
+            console.log(res.data)
+            this.setState({thumbnail:res.data})
         }
         )      
     }
@@ -28,13 +27,13 @@ class SecondaryVideos extends React.Component{
             <div className="thumbnail">
                 <SideTitle />
                 <div className="thumbnail-box__column">
-                    {/* // {thumbnailVideo.map(videoObj=> */}
+                     {this.state.thumbnail.map(videoObj=>
                         <SideVideo
-                        />
-                        {/* // key={}
-                        // image={videoObj.image}
-                        // title={videoObj.title}
-                        // channel={videoObj.channel}  */}
+                        id={videoObj.id}
+                        image={videoObj.image}
+                        channel={videoObj.channel}
+                        description={videoObj.title}
+                        />)} 
                 </div>
             </div>
             </>
@@ -52,10 +51,10 @@ function SideVideo(props){
         return(
             //how the data will be displayed on the page
             <div className="thumbnail-box__cell">
-                <div>{props.image}</div>
+                <div><img className="side-video" src={props.image} alt="first thumbnail"/></div>
                 <div className="thumbnail-box__cell--info">
-                    <h4 className="thumbnail-box__cell--info-title">{}</h4>
-                    <span className="thumbnail-box__cell--info-description">{}</span>
+                    <h4 className="thumbnail-box__cell--info-title">{props.channel}</h4>
+                    <span className="thumbnail-box__cell--info-description">{props.description}</span>
                 </div>
                 
             </div>

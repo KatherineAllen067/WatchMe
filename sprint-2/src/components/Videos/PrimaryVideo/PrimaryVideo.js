@@ -18,7 +18,7 @@ class PrimaryVideo extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('https://project-2-api.herokuapp.com?api_key=408e5c34-9475-4512-a5bd-27932580cec9/videos/:1af0jruup5gu')
+        axios.get('https://project-2-api.herokuapp.com/videos/:1af0jruup5gu?api_key=408e5c34-9475-4512-a5bd-27932580cec9')
         .then(res=>{ 
             console.log(res)
             this.setState({mainVideo:res})
