@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import Main from './pages/Main.js';
 import Uploads from './pages/Uploads.js';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (

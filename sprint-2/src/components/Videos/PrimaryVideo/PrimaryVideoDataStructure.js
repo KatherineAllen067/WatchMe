@@ -29,6 +29,58 @@ const mainVideo ={
             comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
         }
     ]
-}   
+}  
+
+ //data structure for the secondary videos that are in a collapsed state while primary video is playing
+    // const thumbnailVideo = [
+    //     {
+    //         id: uuid(), 
+    //         title: 'Become A Travel Pro In One Easy Lesson', 
+    //         channel: 'Scotty Cranmer', 
+    //         image: <img className="side-video" src={Video2} alt="Man with bike" /> 
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Les Houches The Hidden Gem Of The Chamonix', 
+    //         channel: 'Scotty Cranmer', 
+    //         image: <img className="side-video" src={Video3} alt="beach front" /> 
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Travel Health Useful Medical Information For', 
+    //         channel: 'Scotty Cranmer', 
+    //         image: <img className="side-video" src={Video4} alt="blue smoothie bowl" />
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Cheap Airline Tickets Great Ways To Save', 
+    //         channel: 'Emily Harper', 
+    //         image: <img className="side-video" src={Video5} alt="skyline of Turkey" /> 
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Take A Romantic Break In A Boutique Hotel', 
+    //         channel: 'Ethan Owen', 
+    //         image: <img className="side-video" src={Video6} alt="resort on the ocean" /> 
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Choose The Perfect Accommodations', 
+    //         channel: 'Lydia Perez', 
+    //         image: <img className="side-video" src={Video7} alt="chair and window" />
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Cruising Destination Ideas', 
+    //         channel: 'Timothy Austin', 
+    //         image: <img className="side-video" src={Video8} alt="cruise ship" />
+    //     },
+    //     {
+    //         id: uuid(), 
+    //         title: 'Train Travel On Track For Safety', 
+    //         channel: 'Scotty Cranmer', 
+    //         image: <img className="side-video"src={Video9} alt="train and mountains" /> 
+    //     }
+    // ];
 
 export default mainVideo;

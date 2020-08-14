@@ -6,15 +6,26 @@ import Play from '../../../assets/icons/Icon-play.svg';
 import FullScreen from '../../../assets/icons/Icon-fullscreen.svg';
 import Volume from '../../../assets/icons/Icon-volume.svg';
 import mainVideo from './PrimaryVideoDataStructure.js';
+import axios from 'axios';
 
 class PrimaryVideo extends React.Component{
     //import the data structure as state will be  changing state later
     constructor(props){
         super(props);
         this.state = {
-            mainVideo 
+            mainVideo
         }
     }
+
+    componentDidMount(){
+        axios.get('https://project-2-api.herokuapp.com?api_key=408e5c34-9475-4512-a5bd-27932580cec9/videos/:1af0jruup5gu')
+        .then(res=>{ 
+            console.log(res)
+            this.setState({mainVideo:res})
+        }
+        )      
+    }
+
     render(){
         return(
             <>
