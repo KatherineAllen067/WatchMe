@@ -23,6 +23,9 @@
     @include tablet{
         width:160px;
     }
+    &:hover{
+        background-color:$brain-light;
+    }
 }
 
 .upload-buttons__cancel{

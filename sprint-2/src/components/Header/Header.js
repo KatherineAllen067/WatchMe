@@ -27,8 +27,8 @@ const NavBar =() =>{
 
 const SearchBar = () =>{
     return(
-        <form class="navBar-search" action="submit" method="post">
-            <input class="navBar-search__text" name="search" for="search" type="text" placeholder="Search">
+        <form className="navBar-search" action="submit" method="post">
+            <input className="navBar-search__text" name="search"type="text" placeholder="Search">
             </input>
         </form>
     )
@@ -36,7 +36,7 @@ const SearchBar = () =>{
 
 const Upload =()=>{
     return(
-    <div class="navBar-upload">
+    <div className="navBar-upload">
         <Link to="/uploads"><button className="navBar-upload__button"> <img src={UploadImage} alt="plus sign"/> UPLOAD</button></Link>
         <Avatar />
     </div>

@@ -3,7 +3,7 @@ import './Avatar.scss';
 
 const Avatar=()=>{
     return(
-            <div class="comment-avatar"></div>
+            <div className="comment-avatar"></div>
         )
 }
 export default Avatar;

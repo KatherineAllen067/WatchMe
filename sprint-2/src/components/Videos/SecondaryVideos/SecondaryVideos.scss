@@ -11,7 +11,7 @@
 
 .thumbnail{
     @include desktop{
-        @include light-border;
+        border-left:1px solid $primary-grey;
     }
 }
 .thumbnail-box__column{
@@ -23,17 +23,12 @@
 }
 
 // attempted to use the line-clamp property here not sure why it's not working
-
 .thumbnail-title{
     color:$primary-silver;
     font-family:$medium;
     font-size:$small-font;
     padding:2rem 1rem;
     margin: $none;
-    display: box;
-    line-clamp: 2;
-    box-orient: vertical;  
-    overflow: hidden;
 
     @include tablet{
         padding: 2rem 2rem 1rem 2rem;
@@ -57,8 +52,13 @@
         padding-bottom:$padding-small;
     }
     &--info-description{
+        width:8rem;
         font-size:$thumbnail-font;
         font-family:$light;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
 
     }
 }

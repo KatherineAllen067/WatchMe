@@ -19,9 +19,9 @@ class CommentBox extends React.Component{
 
 const CommentInput = () =>{
     return(
-            <form class="comment-join" action="submit" method="post">
+            <form className="comment-join" action="submit" method="post">
                 <label className="comment-join__title">JOIN THE CONVERSATION
-                    <input className="comment-join__text" name="join" for="join" type="text" placeholder="Write comment here">
+                    <input className="comment-join__text" name="join" type="text" placeholder="Write comment here">
                     </input>
                 </label>
                 <button className="comment-button" type="submit">COMMENT</button>
