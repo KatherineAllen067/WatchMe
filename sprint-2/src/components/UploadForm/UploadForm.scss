@@ -31,8 +31,7 @@
         left:5px;
     }
     &:focus{
-        outline:none;
-        border:2px solid $brain-bright;
+       @include focus;
     }
     @include tablet{
         width:720px;
@@ -71,8 +70,7 @@
         left:5px;
     }
     &:focus{
-        outline:none;
-        border:2px solid $brain-bright;
+        @include focus;
     }
     @include desktop{
         width:630px;

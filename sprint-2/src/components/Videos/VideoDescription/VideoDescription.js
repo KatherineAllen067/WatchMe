@@ -3,6 +3,16 @@ import {ReactComponent as Likes} from '../../../assets/icons/Icon-likes.svg';
 import {ReactComponent as Views} from '../../../assets/icons/Icon-views.svg';
 import './VideoDescription.scss';
 
+function formatDate(t){
+    let time = t
+    var myDate = new Date(time);
+    var year = myDate.getFullYear()
+    var month = myDate.getMonth()+1;
+    var date = myDate.getDate();
+    var dateFormat = date +"/" + month + "/" + year;
+    return dateFormat
+}
+
 class VideoDescription extends React.Component{
     render(props){
         return(
@@ -12,7 +22,7 @@ class VideoDescription extends React.Component{
                             <div className="hero-caption__container">
                                 <div className="hero-caption__header">
                                     <h3 className="hero-caption__header--author">By {this.props.mainVideo.channel}</h3>
-                                    <h3 className="hero-caption__header--time">{this.props.mainVideo.timestamp}</h3>
+                                    <h3 className="hero-caption__header--time">{formatDate(this.props.mainVideo.timestamp)}</h3>
                                 </div>
                                 <div className="hero-caption__info">
                                     <div className="hero-caption__info-cell">

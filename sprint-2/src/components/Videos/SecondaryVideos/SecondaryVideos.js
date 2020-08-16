@@ -46,8 +46,8 @@ function SideVideo(props){
                         <div><img className="side-video" src={props.image} alt="first thumbnail"/></div>
                     </Link>
                     <div className="thumbnail-box__cell--info">
-                        <h4 className="thumbnail-box__cell--info-title">{props.channel}</h4>
-                        <span className="thumbnail-box__cell--info-description">{props.title}</span>
+                        <h4 className="thumbnail-box__cell--info-title">{props.title}</h4>
+                        <span className="thumbnail-box__cell--info-description">{props.channel}</span>
                     </div> 
                 </div>
         )

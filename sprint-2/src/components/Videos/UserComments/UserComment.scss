@@ -13,6 +13,7 @@
     }
     @include desktop{
         margin:0;
+        height:345px;
     }
     &__row{
         width:300px;
@@ -36,7 +37,7 @@
         width:550px;
     }
     &__user{
-        width:220px;
+        width:200px;
         display:flex;
         justify-content: $between;
     

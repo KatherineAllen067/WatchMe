@@ -11,14 +11,21 @@
 
 .thumbnail{
     @include desktop{
-        border-left:1px solid $primary-grey;
+        border-left:3px solid $primary-grey;
+        height:860px;
+        @include flex-column;
+        justify-content: $middle;
     }
-}
+}   
 .thumbnail-box__column{
     @include flex-column;
 
     @include tablet{
         padding:$padding-leveltwo;
+    }
+    @include desktop{
+        height:735px;
+        justify-content: $between;
     }
 }
 
@@ -46,19 +53,23 @@
     }
 
     &--info-title{
+        width:8rem;
+        height:1.8rem;
         font-size:$thumbnail-font;
         font-family: $bold;
         margin:$none;
         padding-bottom:$padding-small;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        @include tablet{
+            width:11rem;
+        }
     }
     &--info-description{
         width:8rem;
         font-size:$thumbnail-font;
         font-family:$light;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;  
-        overflow: hidden;
-
     }
 }

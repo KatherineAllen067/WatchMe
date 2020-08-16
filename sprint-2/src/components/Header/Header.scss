@@ -40,7 +40,6 @@
     padding:$padding-standard 0;
     @include tablet{
         justify-content: flex-end;
-
     }
     
     &__text{
@@ -58,8 +57,7 @@
             left:20px;
         }
         &:focus{
-            outline:none;
-            border:2px solid $brain-bright;
+            @include focus;
         }
         @include tablet{
            

@@ -11,6 +11,18 @@ import axios from 'axios';
 const KEY = "?api_key=24bb5348-1a24-4271-bdb9-a54c38908b34";
 const APIGrab ="https://project-2-api.herokuapp.com/videos";
 
+//create a function to format the date object use .find() on the comments array inside the main video and video description to change the dates posted
+//make sure to format the date on the comments and description of the main video object not side videos they dont have timestamps
+
+// function formatDate(t){
+//     let time = t
+//     var myDate = new Date(time);
+//     var year = myDate.getFullYear()
+//     var month = myDate.getMonth()+1;
+//     var date = myDate.getDate();
+//     var dateFormat = date +"/" + month + "/" + year;
+//     return dateFormat
+// }
 
 class Main extends React.Component {
 
@@ -31,7 +43,6 @@ class Main extends React.Component {
           console.log(res.data)
           let sideV= res.data
           //axios request to the main video with the details and comments
-          //another way could be to store the full array and filter it by the id value- to make it dynamic
           //look up short curcuiting 
           axios.get(APIGrab+"/"+defaultVideo+KEY)
           .then(mainres=>{

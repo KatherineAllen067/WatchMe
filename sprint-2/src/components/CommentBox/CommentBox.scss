@@ -25,7 +25,7 @@
     width:300px;
     padding:$padding-standard;
     display:flex;
-    justify-content: flex-start;
+    justify-content: $start;
     @include tablet{
         width:720px;
     }
@@ -38,7 +38,8 @@
     width:290px;
     display:flex;
     justify-content: $apart;
-    border-bottom:1.5px solid $primary-grey;
+    padding-bottom:$padding-standard;
+    @include light-border;
     @include tablet{
         width:720px;
         height: 7rem;
@@ -83,9 +84,7 @@
         }
     }
     &:focus{
-        outline:none;
-        border:2px solid $brain-bright;
-        //blueborder not working currently CHECK THIS AGAIN 
+        @include focus;
     }
 }
 

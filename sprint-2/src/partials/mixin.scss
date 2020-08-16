@@ -11,7 +11,13 @@
 }
 
 @mixin small-titles{
+    font-weight: bold;
     font-size: $small-font;
     font-family:$medium;
     color:$primary-silver;
+}
+
+@mixin focus{
+    outline:none;
+    border:2px solid $brain-bright;
 }
