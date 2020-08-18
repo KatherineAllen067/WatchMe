@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "avenir-medium";
+  src: url("../assets/fonts/avenir-regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/avenir-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avenir-light";
+  src: url("../assets/fonts/avenir-light.otf") format("opentype");
+  font-weight: normal;
+}
+
+.upload-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .upload-form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.videotitle {
+  font-size: 0.75rem;
+  font-family: "avenir-medium";
+  color: #afafaf;
+  padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .videotitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.videotitle-text {
+  width: 288px;
+  height: 35px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 2px solid #e1e1e1;
+}
+
+.videotitle-text::-webkit-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  left: 5px;
+}
+
+.videotitle-text:-ms-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  left: 5px;
+}
+
+.videotitle-text::-ms-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  left: 5px;
+}
+
+.videotitle-text::placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  left: 5px;
+}
+
+.videotitle-text:focus {
+  outline: none;
+  border: 2px solid #0095FF;
+}
+
+@media screen and (min-width: 768px) {
+  .videotitle-text {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videotitle-text {
+    width: 630px;
+  }
+}
+
+.videodescription {
+  font-size: 0.75rem;
+  font-family: "avenir-medium";
+  color: #afafaf;
+  padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .videodescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 0 2rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videodescription {
+    border-bottom: none;
+  }
+}
+
+.videodescription-text {
+  width: 288px;
+  height: 143px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 2px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .videodescription-text {
+    width: 720px;
+  }
+}
+
+.videodescription-text::-webkit-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.videodescription-text:-ms-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.videodescription-text::-ms-input-placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.videodescription-text::placeholder {
+  font-family: "avenir-medium";
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.videodescription-text:focus {
+  outline: none;
+  border: 2px solid #0095FF;
+}
+
+@media screen and (min-width: 1200px) {
+  .videodescription-text {
+    width: 630px;
+    height: 84px;
+  }
+}
+/*# sourceMappingURL=UploadForm.css.map */

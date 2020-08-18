@@ -1,0 +1,96 @@
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+
+.navBar{
+    width: $full-length;
+    background-color:$primary-white;
+    padding:$padding-standard 0;
+    align-items: $middle;
+    @include flex-column;
+    justify-content: $middle;
+
+    @include tablet{
+        flex-direction: $rows;
+        padding:0.25rem 0;
+        align-items:$middle;
+
+        @include desktop{
+            width:90%;
+            margin:0 auto;
+        }
+    }
+}
+
+.navBar-logo{
+    width:320px;
+    height:25px;
+    padding-top:$padding-standard;
+    display:flex;
+    justify-content: $middle;
+    @include tablet{
+        padding:$none;
+    }
+}
+
+.navBar-search{
+    width:$full-length;
+    display:flex;
+    justify-content:$middle;
+    padding:$padding-standard 0;
+    @include tablet{
+        justify-content: flex-end;
+    }
+    
+    &__text{
+        width: 16rem;
+        height:2rem;
+        background-color:$primary-offwhite;
+        border-radius: 3px;
+        border:2px solid $primary-grey;
+        padding:$padding-standard;
+        background-image: url(../../assets/icons/Icon-search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 1rem;
+        &::placeholder{
+            position:relative;
+            left:20px;
+        }
+        &:focus{
+            @include focus;
+        }
+        @include tablet{
+           
+        }
+    }
+}
+
+.navBar-upload{
+    width:320px;
+    display:flex;
+    justify-content: $apart;
+    @include tablet{
+        padding:$padding-standard;
+        width:20rem;
+    }
+    
+    &__button{
+        width:13rem;
+        height:3rem;
+        font-size:1rem;
+        color: $primary-white;
+        background-color: $brain-bright;
+        border-color:transparent;
+        border-radius: 3px;
+        padding:0.5rem;
+        &:hover{
+            background-color:$brain-light;
+        }
+
+        @include tablet{
+            width:7rem;
+            height: 3.5rem;
+        }
+    }
+}
+

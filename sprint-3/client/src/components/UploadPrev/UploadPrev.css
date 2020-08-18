@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "avenir-medium";
+  src: url("../assets/fonts/avenir-regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/avenir-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avenir-light";
+  src: url("../assets/fonts/avenir-light.otf") format("opentype");
+  font-weight: normal;
+}
+
+.upload-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .upload-preview {
+    width: 730px;
+    margin: 0 auto;
+  }
+}
+
+.upload-preview__title {
+  width: 100%;
+  font-size: 0.75rem;
+  font-family: "avenir-medium";
+  color: #afafaf;
+}
+
+.upload-preview__photo {
+  width: 288px;
+  height: 153px;
+}
+
+@media screen and (min-width: 768px) {
+  .upload-preview__photo {
+    width: 344px;
+    height: 183px;
+  }
+}
+/*# sourceMappingURL=UploadPrev.css.map */

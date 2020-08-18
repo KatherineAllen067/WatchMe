@@ -1,0 +1,80 @@
+@import '../../partials/_fonts';
+@import '../../partials/mediabreaks.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/partial.scss';
+
+.upload-form{
+    @include flex-column;
+    padding:$padding-leveltwo;
+    background-color: $primary-white;
+    @include tablet{
+        justify-content: $start;
+    }
+}
+.videotitle{
+    @include small-titles;
+    padding:$padding-standard 0;
+    @include tablet{
+        @include flex-column;
+    }
+}
+
+.videotitle-text{
+    width:288px;
+    height:35px;
+    background-color:$primary-offwhite;
+    border-radius: 3px;
+    border:2px solid $primary-grey;
+    &::placeholder{
+        font-family:$medium;
+        position:relative;
+        left:5px;
+    }
+    &:focus{
+       @include focus;
+    }
+    @include tablet{
+        width:720px;
+    }
+    @include desktop{
+        width:630px;
+    }
+}
+
+.videodescription{
+    @include small-titles;
+    padding:$padding-standard 0;
+    @include tablet{
+        @include flex-column;
+        @include light-border;
+        padding: 0 0 2rem 0;
+    }
+    @include desktop{
+        border-bottom:none;
+    }
+}
+
+.videodescription-text{
+    width:288px;
+    height:143px;
+    background-color:$primary-offwhite;
+    border-radius: 3px;
+    border:2px solid $primary-grey;
+    @include tablet{
+        width:720px;
+    }
+    &::placeholder{
+        font-family:$medium;
+        position:relative;
+        top: 10px;
+        left:5px;
+    }
+    &:focus{
+        @include focus;
+    }
+    @include desktop{
+        width:630px;
+        height:84px;
+    }
+}
+

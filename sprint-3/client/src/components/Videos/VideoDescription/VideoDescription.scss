@@ -1,0 +1,57 @@
+@import '../../../partials/partial.scss';
+@import '../../../partials/mixin.scss';
+@import '../../../partials/mediabreaks.scss';
+@import '../../../partials/fonts.scss';
+
+.hero-box{
+    @include desktop{
+        align-self:flex-start;
+    }
+}
+
+.hero-caption__title{
+    font-family:$bold;
+    font-size:1.5rem;
+    @include tablet{
+        font-size:2.1rem;
+    }
+}
+
+.hero-description{
+    width:290px;
+    height:195px;
+    padding:$small-font;
+    @include tablet{
+        width:520px;
+        height:130px;
+        align-self: flex-start;
+    }
+}
+
+.hero-description--print{
+    font-size:$small-font;
+}
+
+.hero-caption__header{
+    display:flex;
+    align-items: flex-end;
+    padding-bottom:$padding-leveltwo;
+    &--time{
+        color:$primary-silver;
+        font-family:$light;
+        font-size:$medium-font;
+        margin:$none;
+        @include tablet{
+            font-size:$thumbnail-font;
+        }
+    }
+    &--author{
+        font-family:$medium;
+        font-size:$medium-font;
+        margin:$none;
+        padding-right:$padding-standard;
+        @include tablet{
+            font-size:$thumbnail-font;
+        }
+    }
+}

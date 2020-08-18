@@ -1,0 +1,8 @@
+.comment-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: url(../../assets/images/Mohan-muruge.jpg);
+  background-size: cover;
+}
+/*# sourceMappingURL=Avatar.css.map */

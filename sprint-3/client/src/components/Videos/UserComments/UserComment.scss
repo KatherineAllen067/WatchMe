@@ -1,0 +1,66 @@
+@import '../../../partials/partial.scss';
+@import '../../../partials/mixin.scss';
+@import '../../../partials/mediabreaks.scss';
+@import '../../../partials/fonts.scss';
+
+//user comment styling 
+.comment-holder{
+    @include flex-column;
+    align-items:$middle;
+    @include tablet{
+        width:720px;
+        margin:0 auto;
+    }
+    @include desktop{
+        margin:0;
+        height:345px;
+    }
+    &__row{
+        width:300px;
+        display:flex;
+        padding:0.25rem 0;
+        @include light-border;
+        @include tablet{
+            width:710px;
+            height:6rem;
+            align-items: $middle;
+            justify-content: $middle;
+        }
+    }
+}
+
+.comment-info{
+    width:250px;
+    display:flex;
+    flex-wrap:wrap;
+    @include tablet{
+        width:550px;
+    }
+    &__user{
+        width:200px;
+        display:flex;
+        justify-content: $between;
+    
+        &--name{
+            font-family:$bold;
+            font-size:$small-font;
+            padding:$padding-standard;
+        }
+        &--date{
+            color:$primary-silver;
+            font-family:$light;
+            font-size:$small-font;
+            padding:$padding-standard;
+        }
+    }
+    &__post{
+        width:200px;
+        font-family:$light;
+        font-size:$small-font;
+        padding:$padding-standard;
+        @include tablet{
+            width:624px;
+        }
+    }
+}
+

@@ -1,0 +1,219 @@
+.comment {
+  background-color: #ffffff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .comment {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .comment {
+    height: 550px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comment {
+    width: 712px;
+    height: 200px;
+  }
+}
+
+.comment-title {
+  width: 300px;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-title {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comment-title {
+    width: 630px;
+  }
+}
+
+.comment-input {
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1.5px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-input {
+    width: 720px;
+    height: 7rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.comment-join {
+  width: 14rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-join {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 38rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.comment-join__title {
+  color: #afafaf;
+}
+
+.comment-join__text {
+  width: 13.5rem;
+  height: 6rem;
+  background-color: #fafafa;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-join__text {
+    width: 25rem;
+    height: 3rem;
+  }
+}
+
+.comment-join__text::-webkit-input-placeholder {
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
+
+.comment-join__text:-ms-input-placeholder {
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
+
+.comment-join__text::-ms-input-placeholder {
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
+
+.comment-join__text::placeholder {
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-join__text::-webkit-input-placeholder {
+    font-size: 1rem;
+    position: relative;
+    top: 2px;
+  }
+  .comment-join__text:-ms-input-placeholder {
+    font-size: 1rem;
+    position: relative;
+    top: 2px;
+  }
+  .comment-join__text::-ms-input-placeholder {
+    font-size: 1rem;
+    position: relative;
+    top: 2px;
+  }
+  .comment-join__text::placeholder {
+    font-size: 1rem;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.comment-join__text:focus {
+  outline: none;
+  border: 2px solid #0095FF;
+}
+
+.comment-button {
+  width: 14rem;
+  height: 3rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #0095FF;
+  border-color: transparent;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-button {
+    padding: 1rem;
+    position: relative;
+    top: 10px;
+  }
+}
+
+.comment-button:hover {
+  background-color: #0065AD;
+}
+
+.comment-posts {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=CommentBox.css.map */

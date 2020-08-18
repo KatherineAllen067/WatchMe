@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "avenir-medium";
+  src: url("../assets/fonts/avenir-regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/avenir-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avenir-light";
+  src: url("../assets/fonts/avenir-light.otf") format("opentype");
+  font-weight: normal;
+}
+
+.header-uploads {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #ffffff;
+}
+
+.upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .upload {
+    width: 100%;
+    padding-top: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.upload-title {
+  font-family: "avenir-bold";
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .upload-title {
+    width: 700px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .upload-title {
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preview-upoads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preview-upoads {
+    width: 1040px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+/*# sourceMappingURL=Uploads.css.map */

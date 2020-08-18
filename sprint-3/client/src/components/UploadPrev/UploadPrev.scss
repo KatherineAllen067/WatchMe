@@ -1,0 +1,26 @@
+@import '../../partials/partial.scss';
+@import '../../partials/mixin.scss';
+@import '../../partials/mediabreaks.scss';
+@import '../../partials/_fonts';
+
+.upload-preview{
+    @include flex-column;
+    padding: 0 $padding-leveltwo;
+    @include tablet{
+        width:730px;
+        margin:0 auto;
+    }
+    &__title{
+        width:$full-length;
+        @include small-titles;
+        }
+        &__photo{
+            width:288px;
+            height:153px;
+            @include tablet{
+                width:344px;
+                height:183px;
+            }
+        }
+}
+

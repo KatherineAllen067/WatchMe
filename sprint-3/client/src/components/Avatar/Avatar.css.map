@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EACX,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,yCAAyC;EAC3D,eAAe,EAAC,KAAK;CACtB",
+    "sources": [
+        "Avatar.scss"
+    ],
+    "names": [],
+    "file": "Avatar.css"
+}
