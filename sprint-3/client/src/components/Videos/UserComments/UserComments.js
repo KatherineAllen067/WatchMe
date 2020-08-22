@@ -19,7 +19,7 @@ class UserComments extends React.Component{
         return(
             //passing the props to the comment component
                 <div className="comment-holder">
-                    {this.props.mainVideo.comments.map(v=>{
+                    {/* {this.props.mainVideo.comments.map(v=>{
                             //format the date before passing it into the html we want it to live in 
                             return(
                                 <Comment
@@ -30,7 +30,7 @@ class UserComments extends React.Component{
                                 />
                             )
                         })
-                    }
+                    } */}
                 </div>  
             )
             }

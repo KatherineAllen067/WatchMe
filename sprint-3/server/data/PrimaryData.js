@@ -1,5 +1,5 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 
 const primaryVideo=[
     {
@@ -317,3 +317,13 @@ const primaryVideo=[
             }
         ]
 }];
+
+//put the data inside a http get request to server it
+router.get('/:id', (req, res)=>{
+    console.log('Request for primary videos')
+    res.status(200).json(primaryVideo);
+})
+
+module.exports = router;
+
+

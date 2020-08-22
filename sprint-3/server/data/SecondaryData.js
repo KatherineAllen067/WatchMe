@@ -1,5 +1,5 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 
 const secondaryVideo=[
     {
@@ -57,3 +57,12 @@ const secondaryVideo=[
         "image": "https://i.imgur.com/i6S8m7I.jpg"
     }
 ]
+
+//put the data inside a http get request to server it
+router.get('/videos', (req, res)=>{
+    console.log('Request for thumbnails')
+    //send this array of objects as a response with a status code
+    res.status(200).json(secondaryVideo);
+})
+
+module.exports = router;
