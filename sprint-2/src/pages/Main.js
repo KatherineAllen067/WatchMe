@@ -13,17 +13,6 @@ const APIGrab ="https://project-2-api.herokuapp.com/videos";
 
 //create a function to format the date object use .find() on the comments array inside the main video and video description to change the dates posted
 //make sure to format the date on the comments and description of the main video object not side videos they dont have timestamps
-
-// function formatDate(t){
-//     let time = t
-//     var myDate = new Date(time);
-//     var year = myDate.getFullYear()
-//     var month = myDate.getMonth()+1;
-//     var date = myDate.getDate();
-//     var dateFormat = date +"/" + month + "/" + year;
-//     return dateFormat
-// }
-
 class Main extends React.Component {
 
   state={
@@ -37,7 +26,7 @@ class Main extends React.Component {
         defaultVideo = this.props.match.params.videoId
       }
 
-      console.log(this.props.match)
+      // console.log(this.props.match)
       axios.get(APIGrab+KEY)
       .then(res=>{ 
           console.log(res.data)
@@ -62,7 +51,7 @@ class Main extends React.Component {
     if(prevProps.match.params.videoId !== this.props.match.params.videoId){
       axios.get(APIGrab+"/"+this.props.match.params.videoId+KEY)
       .then(response=>{
-        console.log(response)
+        console.log(response.data)
         this.setState({
           mainVideo: response.data
         })

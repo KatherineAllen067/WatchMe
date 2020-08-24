@@ -1,7 +1,4 @@
-const express = require("express");
-const router = express.Router();
-
-const primaryVideo=[
+[
     {
         "id": "1af0jruup5gu",
         "title": "BMX Rampage: 2018 Highlights",
@@ -316,14 +313,5 @@ const primaryVideo=[
                 "timestamp": 1542262984046
             }
         ]
-}];
-
-//put the data inside a http get request to server it
-router.get('/:id', (req, res)=>{
-    console.log('Request for primary videos')
-    res.status(200).json(primaryVideo);
-})
-
-module.exports = router;
-
-
+    }
+]

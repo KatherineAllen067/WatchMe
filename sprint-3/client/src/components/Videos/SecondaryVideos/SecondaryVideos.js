@@ -5,17 +5,16 @@ import {Link} from 'react-router-dom';
 
 class SecondaryVideos extends React.Component{
     render(props){
-//filter the side videos to not show the current selected one
-        let filtervideo = this.props.thumbnail.filter(v=> v.id !== this.props.mainVideo.id)
+        //filter the side videos to not show the current selected one
+        let filtervideo = this.props.sideVideo.filter(v => v.id !== this.props.mainVideo.id)
         return(
-            //passing the data to the component
             <>
             <div className="thumbnail">
                 <SideTitle />
                 <div className="thumbnail-box__column">
-                    { 
-                    filtervideo.map(video=>{
-                        return( <SideVideo
+                    {filtervideo.map(video=>{
+                        return( 
+                        <SideVideo
                         key={uuid()}
                         id={video.id}
                         image={video.image}

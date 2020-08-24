@@ -3,10 +3,9 @@ import './Uploads.scss';
 import Header from '../components/Header/Header.js';
 import UploadPrev from '../components/UploadPrev/UploadPrev.js';
 import UploadForm from '../components/UploadForm/UploadForm.js';
-import UploadButtons from '../components/UploadButtons/UploadButtons.js';
-
 
 function Uploads(){
+
     return(
         <>
         <div className="header-uploads">
@@ -17,7 +16,6 @@ function Uploads(){
             <UploadPrev/>  
             <UploadForm />
         </div>
-            <UploadButtons />
         </>
     )
 }

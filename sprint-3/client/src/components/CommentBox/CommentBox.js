@@ -21,8 +21,7 @@ const CommentInput = () =>{
     return(
             <form className="comment-join" action="submit" method="post">
                 <label className="comment-join__title">JOIN THE CONVERSATION
-                    <input className="comment-join__text" name="join" type="text" placeholder="Write comment here">
-                    </input>
+                    <input className="comment-join__text" name="join" type="text" placeholder="Write comment here"></input>
                 </label>
                 <button className="comment-button" type="submit">COMMENT</button>
             </form>
