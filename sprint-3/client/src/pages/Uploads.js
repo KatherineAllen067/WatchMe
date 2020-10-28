@@ -8,14 +8,14 @@ function Uploads(){
 
     return(
         <>
-        <div className="header-uploads">
-            <Header />
-        </div>
-        <UploadTitle/>
-        <div className="preview-upoads">
-            <UploadPrev/>  
-            <UploadForm />
-        </div>
+            <div className="header-uploads">
+                <Header />
+            </div>
+            <UploadTitle/>
+            <div className="preview-upoads">
+                <UploadPrev/>  
+                <UploadForm />
+            </div>
         </>
     )
 }

@@ -30,7 +30,7 @@ class Main extends React.Component {
                       })
                     })
               })          
-    }
+      }
 
     componentDidUpdate(prevProps){
       if(prevProps.match.params.videoId !== this.props.match.params.videoId){

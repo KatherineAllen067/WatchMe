@@ -8,9 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Main} />
         <Route path="/uploads" exact component={Uploads} />  
         <Route path="/:videoId" component={Main}/>
+        <Route path="/" exact component={Main} />
       </Switch>
     </BrowserRouter>
   )
