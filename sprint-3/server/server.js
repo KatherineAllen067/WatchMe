@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyparser.json())
 
-//defining the endpoints for the primary video http://localhost:8080/videos/:id
+//defining the endpoints for the primary video
 app.use('/', videoIdRoutes);
 app.use('/videos', videoIdRoutes);
 

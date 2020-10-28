@@ -19,7 +19,6 @@ class Main extends React.Component {
       if(this.props.match.params.videoId){
         defaultV = this.props.match.params.videoId
         }
-        // console.log(this.props.match)
           axios.get("http://localhost:8080/videos/")
               .then(response=>{
                   axios.get("http://localhost:8080/videos/"+defaultV)
@@ -37,11 +36,9 @@ class Main extends React.Component {
       if(prevProps.match.params.videoId !== this.props.match.params.videoId){
         axios.get("http://localhost:8080/videos/"+this.props.match.params.videoId)
           .then(response=>{
-            this.setState({
-              mainVideo: response.data
-            })
-        })
-      }
+            this.setState({ mainVideo: response.data })
+          })
+        }
     }
 
   render(){
