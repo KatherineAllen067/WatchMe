@@ -4,11 +4,12 @@ import axios from 'axios';
 import Preview from '../../assets/images/Upload-video-preview.jpg';
 
 class UploadForm extends React.Component{
-    //need to grab the data and update the state
-    //clear all forms
+
     render(){
     //publish new video to backend
     function publishV(e){
+        let form = document.querySelector('form');
+        console.log(form)
         e.preventDefault();
         axios.post("http://localhost:8080/videos/", {
             title : e.target.title.value,
@@ -21,10 +22,10 @@ class UploadForm extends React.Component{
                     sideVideo:result.data
                 })      
             })
-                .catch(err=>{
-                    console.log('there is an error', err)
-                })
-            // form.reset();
+            .catch(err=>{
+                console.log('there is an error', err)
+            })
+            form.reset();
     }
 
         return(
