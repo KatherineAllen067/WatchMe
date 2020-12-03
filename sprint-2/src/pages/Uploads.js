@@ -17,7 +17,7 @@ function Uploads(){
             <UploadPrev/>  
             <UploadForm />
         </div>
-            <UploadButtons />
+        <UploadButtons />
         </>
     )
 }

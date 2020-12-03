@@ -20,7 +20,7 @@ class Header extends React.Component{
 const NavBar =() =>{
     return(
         <div className="navBar-logo">
-            <Link to="/"><img src={brainFlixLogo} alt="brainflix logo"/></Link>
+            <Link to="/">Watch Me</Link>
         </div> 
     )
 }

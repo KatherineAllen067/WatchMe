@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 class SecondaryVideos extends React.Component{
     render(props){
-        //filter the side videos to not show the current selected one
+        //filter the side videos to not show the current video
         let filtervideo = this.props.sideVideo.filter(v => v.id !== this.props.mainVideo.id)
         return(
             <>
@@ -37,18 +37,17 @@ const SideTitle =()=>{
 }
 
 function SideVideo(props){
-    // console.log(props.id) checking that I'm getting the video Id
         return(
             //how the data will be displayed on the page and the Link that changes the path to display the specfic details of the selected video
-                <div className="thumbnail-box__cell">
-                    <Link to={"/"+props.id}>
-                        <div><img className="side-video" src={props.image} alt="first thumbnail"/></div>
-                    </Link>
-                    <div className="thumbnail-box__cell--info">
-                        <h4 className="thumbnail-box__cell--info-title">{props.title}</h4>
-                        <span className="thumbnail-box__cell--info-description">{props.channel}</span>
-                    </div> 
-                </div>
+            <div className="thumbnail-box__cell">
+                <Link to={"/"+props.id}>
+                    <div><img className="side-video" src={props.image} alt="first thumbnail"/></div>
+                </Link>
+                <div className="thumbnail-box__cell--info">
+                    <h4 className="thumbnail-box__cell--info-title">{props.title}</h4>
+                    <span className="thumbnail-box__cell--info-description">{props.channel}</span>
+                </div> 
+            </div>
         )
 }  
 

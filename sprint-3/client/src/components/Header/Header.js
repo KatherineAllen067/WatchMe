@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.scss';
-import brainFlixLogo from '../../assets/images/Logo-brainflix.png';
 import Avatar from '../Avatar/Avatar.js';
 import UploadImage from '../../assets/icons/Icon-upload.svg';
 import { Link } from 'react-router-dom';
@@ -20,7 +19,7 @@ class Header extends React.Component{
 const NavBar =() =>{
     return(
         <div className="navBar-logo">
-            <Link to="/"><img src={brainFlixLogo} alt="brainflix logo"/></Link>
+            <Link to="/" className="logo">Watch Me</Link>
         </div> 
     )
 }
