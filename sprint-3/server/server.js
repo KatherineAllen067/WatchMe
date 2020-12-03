@@ -16,5 +16,5 @@ app.use('/videos', videoIdRoutes);
 
 //defining the port to listen on in this case http://localhost:8080
 app.listen((8080), () => {
-    console.log(`BrainFlix listening on 8080`);
+    console.log(`Watch Me listening on 8080`);
   });

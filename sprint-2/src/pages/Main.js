@@ -32,7 +32,6 @@ class Main extends React.Component {
           console.log(res.data)
           let sideV= res.data
           //axios request to the main video with the details and comments
-          //look up short curcuiting 
           axios.get(APIGrab+"/"+defaultVideo+KEY)
           .then(mainres=>{
             console.log(mainres.data)
@@ -60,7 +59,8 @@ class Main extends React.Component {
   }
 
   render(){
-  //conditional statement here, in order to avoid putting it at every individual component I passed mainVideo to
+  //conditional statement here, in order to avoid putting it at every individual component
+  //I passed mainVideo to
     if(!this.state.mainVideo){
       return null;
     }
